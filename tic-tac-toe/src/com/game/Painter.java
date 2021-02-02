@@ -12,8 +12,6 @@ import java.io.IOException;
 
 public class Painter extends JPanel implements MouseListener {
 
-    private  static final long serialversionUID = 1L;
-
     protected final int  WIDTH = 506;
     protected final int HEIGHT = 527;
 
@@ -41,9 +39,6 @@ public class Painter extends JPanel implements MouseListener {
     protected int lengthOfSpace = 160;
     //if many errors accur unableCommunicationWithoponen will set to true and throw an error
     protected int errors = 0;
-    //start and end for rendering the final message
-    public static int firstSpot = -1;
-    public static int secondSpot = -1;
 
     protected Font font = new Font("Verdana", Font.BOLD, 32);
     protected Font smallerfont =new Font("Verdana", Font.BOLD, 20);

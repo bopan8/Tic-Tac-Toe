@@ -1,11 +1,7 @@
 package com.game;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.image.BufferedImage;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -31,10 +27,6 @@ public class TicTacToe implements Runnable {
     public DataInputStream dis;
 
     protected ServerSocket serverSocket;
-
-
-
-
 
     public TicTacToe(){
         System.out.println("Please enter an IP : ");
@@ -130,8 +122,6 @@ public class TicTacToe implements Runnable {
         painter.yourTurn = true;
         painter.circle = false;
     }
-
-
 
     @SuppressWarnings("unused")
     public static void main(String[] args) {
